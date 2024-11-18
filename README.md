@@ -114,3 +114,28 @@ Each app has a unique `id` and `description`. So, you should change these fields
 
 William Mobley - wmobley@tacc.utexas.edu
 Maximiliano Osorio
+
+
+## Notes from 2024-11-18 workshop
+
+- fork repo
+- clone to desktop
+- find out the github version for the commit that is under actions on Github.com
+-- example code will be something like `1498b2d`
+- edit file 'app-cpu.json'
+-- line 2: `"id": "Cookbook-SETX-TACC"`, this can be any name
+-- line 3: `"version": "0.0.1:sha-1498b2d"`
+-- line 10: `""containerImage": "docker://ghcr.io/npr99/Cookbook-SETX-TACC:sha-1498b2d"`
+-- line 144: `    "label": "Cookbook-SETX tutorial - Jupyter Lab (CPU)",`
+-- line 149: `    "queueFilter": ["vm-small"]`
+--- Will explained that line 149 has several options vm-small is easy to get because it has fewer cores maybe...
+
+- edit file run.sh
+-- line 9: `export GIT_REPO_URL="https://github.com/npr99/Cookbook-SETX-TACC.git"`
+-- line 10: `export COOKBOOK_NAME="Cookbook-SETX-TACC Tutorial"`
+
+Log into TACC website https://in-for-disaster-analytics.github.io/cookbooks-ui/#/login
+- create a new application
+- locate the app-cpu.json file and open
+- select run and set allocation to PT2050-DataX
+- login password and TACC token is from DUO multi factor (set up in advance)
