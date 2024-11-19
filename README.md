@@ -128,6 +128,8 @@ Maximiliano Osorio
 -- line 2: `"id": "cookbook-setx-tacc`, this can be any name
 -- line 3: `"version": "0.0.1:sha-1498b2d"`
 -- line 10: `""containerImage": "docker://ghcr.io/npr99/cookbook-setx-tacc:sha-1498b2d"`
+-- line 10: WARNING - Missing `-cpu` 
+-- line 10: `""containerImage": "docker://ghcr.io/npr99/cookbook-setx-tacc-cpu:sha-15496a3"`
 -- line 144: `    "label": "Cookbook-SETX tutorial - Jupyter Lab (CPU)",`
 -- line 149: `    "queueFilter": ["vm-small"]`
 --- Will explained that line 149 has several options vm-small is easy to get because it has fewer cores maybe...
@@ -135,6 +137,9 @@ Maximiliano Osorio
 - edit file run.sh
 -- line 9: `export GIT_REPO_URL="https://github.com/npr99/cookbook-setx-tacc.git"`
 -- line 10: `export COOKBOOK_NAME="Cookbook-SETX-TACC Tutorial"`
+-- line 10: WARNING NO SPACES and make it lower case for consistency
+-- line 10: Corrected `export COOKBOOK_NAME="cookbook-setx-tacc-tutorial"`
+
 
 Log into TACC website https://in-for-disaster-analytics.github.io/cookbooks-ui/#/login
 - create a new application
