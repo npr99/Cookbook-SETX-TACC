@@ -146,3 +146,5 @@ Commit changes to Github
 - get the new unique id for actions different from the previous version 8a74db5
 
 Edit lines 3 and 10 in app-cpu.json to reflect the new unique id
+
+FATAL:   Unable to handle docker://ghcr.io/npr99/cookbook-setx-tacc:sha-ae4fdee uri: failed to get checksum for docker://ghcr.io/npr99/cookbook-setx-tacc:sha-ae4fdee: Requesting bearer token: invalid status code from registry 403 (Forbidden)
